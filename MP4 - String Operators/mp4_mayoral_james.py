@@ -47,12 +47,16 @@ Vowels: {total_vowels}""")
 length()
 ###4.) Ask for a word and check if it's a palindrome (same forward and backward)###
 def palindrome():
-	pass
+	w = input("Enter a word: ")
+	word = w.lower()
+	reverse = word[::-1]
+
+	if reverse == word:
+		print("This word is a Palindrome")
+	else:
+		print("This word is not a  Palindrome")	
 
 palindrome()
-
-
-
 ###5.) Ask for a phrase and display it in uppercase and reversed.###
 def shout():
 	x = input("Enter a Phrase: ")
@@ -62,4 +66,18 @@ def shout():
 
 shout()
 ###6.) Ask the user to input an email address and check validity(with errors and such)###
+def email():
+	email = input("Enter your email: ")
 
+	index = email.find("@")
+
+	if "@" in email and "." in email:
+		user = email[:index]
+		username = user.lower()
+		format_user = username.replace(".", " ").replace("_", " ")
+
+		print(f"Your username is {format_user}")
+	else:
+		print("Invalid email! Must Contain @ and .")	
+
+email()
