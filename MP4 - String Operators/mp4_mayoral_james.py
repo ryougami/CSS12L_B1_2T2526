@@ -11,7 +11,7 @@ def name():
 
 	print(f"Your formated name is: {last}, {first} {middle}.")
  
-name()
+#name()
 ###2.) Ask for a word and an integer N. Print the word in a growing pyramid pattern up to N times.###
 
 def pyramid():
@@ -21,7 +21,7 @@ def pyramid():
 	for w in range(1, number + 1):
 		print(word*w)
 
-pyramid()
+#pyramid()
 ###3.) Ask for a sentence and return the total characters, words, and vowels###
 def length():
 	z = input("Enter sentence: ")
@@ -44,7 +44,7 @@ def length():
 Words: {a}
 Vowels: {total_vowels}""")		
 
-length()
+#length()
 ###4.) Ask for a word and check if it's a palindrome (same forward and backward)###
 def palindrome():
 	w = input("Enter a word: ")
@@ -56,7 +56,7 @@ def palindrome():
 	else:
 		print("This word is not a  Palindrome")	
 
-palindrome()
+#palindrome()
 ###5.) Ask for a phrase and display it in uppercase and reversed.###
 def shout():
 	x = input("Enter a Phrase: ")
@@ -64,7 +64,7 @@ def shout():
 
 	print(shout[::-1])
 
-shout()
+#shout()
 ###6.) Ask the user to input an email address and check validity(with errors and such)###
 def email():
 	email = input("Enter your email: ")
