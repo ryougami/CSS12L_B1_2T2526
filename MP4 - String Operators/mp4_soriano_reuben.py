@@ -35,9 +35,9 @@ phrase = input("\nEnter a phrase: ")
 print(f"Output: {phrase.upper()[::-1]}")
 
 #6
-email_v = input("\nEnter your email address: ")
-if "@" in email_v and "." in email_v:
-    username = email_v.split("@")[0].lower().replace("_", " ").replace(".", " ")
+email = input("\nEnter your email address: ")
+if "@" in email_v and "." in email:
+    username = email.split("@")[0].lower().replace("_", " ").replace(".", " ")
     print(f"Your username is: {username}")
 else:
     print("Invalid email address. Please include \"@\" and a dot (.)")
